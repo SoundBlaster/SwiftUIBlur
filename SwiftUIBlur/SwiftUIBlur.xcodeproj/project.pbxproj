@@ -13,6 +13,8 @@
 		B157C6182569C9E6008790AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157C6032569C9E4008790AC /* ContentView.swift */; };
 		B157C6192569C9E6008790AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B157C6042569C9E6008790AC /* Assets.xcassets */; };
 		B157C61A2569C9E6008790AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B157C6042569C9E6008790AC /* Assets.xcassets */; };
+		B157C62E2569D4C3008790AC /* DebugBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157C62D2569D4C3008790AC /* DebugBorder.swift */; };
+		B157C62F2569D4C3008790AC /* DebugBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157C62D2569D4C3008790AC /* DebugBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		B157C6132569C9E6008790AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B157C6142569C9E6008790AC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		B157C6252569D0E9008790AC /* SwiftUIBlur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIBlur.entitlements; sourceTree = "<group>"; };
+		B157C62D2569D4C3008790AC /* DebugBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				B157C6022569C9E4008790AC /* SwiftUIBlurApp.swift */,
 				B157C6032569C9E4008790AC /* ContentView.swift */,
 				B157C6042569C9E6008790AC /* Assets.xcassets */,
+				B157C62D2569D4C3008790AC /* DebugBorder.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -189,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B157C62E2569D4C3008790AC /* DebugBorder.swift in Sources */,
 				B157C6172569C9E6008790AC /* ContentView.swift in Sources */,
 				B157C6152569C9E6008790AC /* SwiftUIBlurApp.swift in Sources */,
 			);
@@ -198,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B157C62F2569D4C3008790AC /* DebugBorder.swift in Sources */,
 				B157C6182569C9E6008790AC /* ContentView.swift in Sources */,
 				B157C6162569C9E6008790AC /* SwiftUIBlurApp.swift in Sources */,
 			);
