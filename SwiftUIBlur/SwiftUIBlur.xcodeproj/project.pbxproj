@@ -24,6 +24,7 @@
 		B157C6112569C9E6008790AC /* SwiftUIBlur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBlur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B157C6132569C9E6008790AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B157C6142569C9E6008790AC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B157C6252569D0E9008790AC /* SwiftUIBlur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIBlur.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		B157C5FC2569C9E4008790AC = {
 			isa = PBXGroup;
 			children = (
+				B157C6252569D0E9008790AC /* SwiftUIBlur.entitlements */,
 				B157C6012569C9E4008790AC /* Shared */,
 				B157C60B2569C9E6008790AC /* iOS */,
 				B157C6122569C9E6008790AC /* macOS */,
@@ -320,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIBlur.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8T2366K8X;
 				ENABLE_PREVIEWS = YES;
@@ -342,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIBlur.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8T2366K8X;
 				ENABLE_PREVIEWS = YES;
