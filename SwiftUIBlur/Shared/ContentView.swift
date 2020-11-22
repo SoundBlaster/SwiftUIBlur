@@ -42,13 +42,6 @@ struct Card: View {
     }
 }
 
-struct Blur: View {
-    var body: some View {
-        Text("Blur view")
-            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-    }
-}
-
 struct ContentView: View {
     var body: some View {
         ZStack {
