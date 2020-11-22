@@ -33,7 +33,10 @@ struct Card: View {
         .background(Color(UIColor.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 34, style: .continuous))
         .padding(18)
-        .background(Blur(style: .systemUltraThinMaterial))
+        .background(
+            Blur(style: .systemUltraThinMaterial)
+                .overlay(Color(UIColor.systemBackground).opacity(0.5))
+        )
         .clipShape(RoundedRectangle(cornerRadius: 44, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 44, style: .continuous)
