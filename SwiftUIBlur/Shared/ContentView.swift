@@ -33,11 +33,11 @@ struct Card: View {
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 34, style: .continuous))
         .padding(18)
-        .background(Color.white.opacity(0.5))
+        .background(Blur(style: .systemMaterial))
         .clipShape(RoundedRectangle(cornerRadius: 44, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 44, style: .continuous)
-                .stroke(Color.white, lineWidth: 1)
+                .stroke(Color.white.opacity(0.5), lineWidth: 1)
         )
     }
 }
@@ -50,9 +50,6 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Blur()
-                    .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
                 Card()
             }
         }
