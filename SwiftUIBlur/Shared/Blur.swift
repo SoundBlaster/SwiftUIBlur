@@ -62,6 +62,14 @@ extension Blur {
     }
 }
 
+extension Blur {
+    func effectStyle(_ style: UIBlurEffect.Style) -> Self {
+        var copy = self
+        copy.style = style
+        return copy
+    }
+}
+
 struct Blur_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
@@ -70,6 +78,7 @@ struct Blur_Previews: PreviewProvider {
                 .ignoresSafeArea()
             Blur()
                 .intensity(0.5)
+                .effectStyle(.systemMaterialDark)
                 .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .debugBorder()
         }
