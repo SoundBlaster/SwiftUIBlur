@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Card: View {
     var body: some View {
-        HStack {
+        HStack(alignment: VerticalAlignment.center, spacing: 18) {
             ZStack {
                 Color.accentColor
                 
@@ -18,15 +18,27 @@ struct Card: View {
                     .font(.system(size: 32))
             }
             .frame(width: 64, height: 64, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            .cornerRadius(18)
-            .clipped()
+            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             
-            VStack {
+            VStack(alignment: .leading, spacing: 8) {
                 Text("10:00 – 11:00")
-            
+                    .font(.headline)
+                
                 Text("Wednesday, June 2020")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
             }
         }
+        .padding(17)
+        .background(Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: 34, style: .continuous))
+        .padding(18)
+        .background(Color.white.opacity(0.5))
+        .clipShape(RoundedRectangle(cornerRadius: 44, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 44, style: .continuous)
+                .stroke(Color.white, lineWidth: 1)
+        )
     }
 }
 
