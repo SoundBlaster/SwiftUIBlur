@@ -45,15 +45,16 @@ struct Card: View {
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Image("bg", bundle: nil)
+            Image("bg1", bundle: nil)
                 .resizable()
                 .ignoresSafeArea()
             
-            Blur()
-                .debugBorder(color: .green)
-            
-            Card()
-                .debugBorder(color: .yellow)
+            VStack {
+                Blur()
+                    .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                Card()
+            }
         }
     }
 }
