@@ -15,6 +15,8 @@ class BlurIntensityView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        applyMask()
+        
         addSubview(effectView)
     }
     
@@ -31,6 +33,8 @@ class BlurIntensityView: UIView {
         super.layoutSubviews()
         
         effectView.frame = bounds
+        
+        applyMask()
     }
     
     public func update(intensity: Float, style: UIBlurEffect.Style) {
@@ -38,6 +42,15 @@ class BlurIntensityView: UIView {
             self.effectView.effect = UIBlurEffect(style: style)
         }
         animator.fractionComplete = CGFloat(intensity)
+    }
+    
+    private func applyMask() {
+        let maskLayer = CAGradientLayer()
+        maskLayer.frame = bounds;
+        maskLayer.colors = [UIColor.white.cgColor, UIColor.white.withAlphaComponent(0.5).cgColor];
+        maskLayer.startPoint = CGPoint(x: 0.5, y: 0.5);
+        maskLayer.endPoint = CGPoint(x: 0.5, y: 1.0);
+        effectView.layer.mask = maskLayer;
     }
 }
 
