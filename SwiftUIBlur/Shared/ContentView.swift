@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Card: View {
+    @State private var offset = CGSize.zero
+    
     var body: some View {
         HStack(alignment: VerticalAlignment.center, spacing: 18) {
             ZStack {
@@ -43,6 +45,16 @@ struct Card: View {
         .overlay(
             RoundedRectangle(cornerRadius: 44, style: .continuous)
                 .stroke(Color(UIColor.systemBackground).opacity(0.5), lineWidth: 1)
+        )
+        .offset(x: offset.width, y: offset.height)
+        .gesture(
+            DragGesture()
+                .onChanged { gesture in
+                    self.offset = gesture.translation
+                }
+                .onEnded { _ in 
+                    self.offset = .zero
+                }
         )
     }
 }
