@@ -37,7 +37,7 @@ struct Card: View {
         .padding(18)
         .background(
             Blur()
-                .intensity(0.5)
+                .intensity(0.75)
                 .effectStyle(.systemThickMaterial)
                 .overlay(Color(UIColor.systemBackground).opacity(0.5))
         )
